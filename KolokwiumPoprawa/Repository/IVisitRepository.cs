@@ -1,6 +1,9 @@
+using KolokwiumPoprawa.Model;
+
 namespace KolokwiumPoprawa.Repository;
 
-public class IVisitRepository
+public interface IVisitRepository
 {
-    
+    Task<Patient> GetPatientAsync(int id);
+    Task<Doctor> GetDoctorAsync(int id);
 }
